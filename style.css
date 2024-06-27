@@ -1,5 +1,9 @@
 /* SHARED */
 
+html, body {
+    height: 100%;
+}
+
 .navbar_items {
     display: flex;
     justify-content: center;
@@ -55,6 +59,12 @@
     transform: scale(1);
     opacity: 1;
   }
+}
+
+.cta-button:hover {
+    background-color: red;
+    transform: scale(1.1);
+    animation: none;
 }
 
 /* ACCOMODATIONS PAGE */
