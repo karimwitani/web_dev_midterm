@@ -1,5 +1,9 @@
 /* SHARED */
 
+html, body {
+    height: 100%;
+}
+
 .navbar_items {
     display: flex;
     justify-content: center;
@@ -43,6 +47,24 @@
     border-radius: 5px;
     padding: 10px 20px;
     margin-top: 10px;
+    animation: pulse 1000ms ease 600ms infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.cta-button:hover {
+    background-color: red;
+    transform: scale(1.1);
+    animation: none;
 }
 
 /* ACCOMODATIONS PAGE */
